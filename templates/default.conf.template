@@ -1,0 +1,6 @@
+server {
+	listen 80;
+	server_name ${REDIRECTOR_NAME};
+
+	rewrite ^/$ ${REDIRECTOR_TARGET} ${REDIRECTOR_TYPE};
+}
